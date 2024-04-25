@@ -11,10 +11,9 @@ const KEY = process.env.LT_ACCESS_KEY || "accessKey";
 
 // gridUrl: gridUrl can be found at automation dashboard
 const GRID_HOST =
-process.env.GRID_HOST || "@hub.lambdatest.com/wd/hub";    //connect to lambdatest hub
+process.env.GRID_HOST || "@stage-hub.lambdatestinternal.com/wd/hub";    //connect to lambdatest hub
 
-const GRID_URL = process.env.GRID_URL || "GRID_URL";
-
+const GRID_URL = "https://arushs:V7GG7oG5LPQAjaqOejgJfVmgzaIaLNrLMMhhOcxXhaNDgyPnz8@stage-hub.lambdatestinternal.com/wd/hub"
 async function searchTextOnGoogle() {
   var keys = process.argv;
   console.log(keys);
@@ -35,8 +34,8 @@ async function searchTextOnGoogle() {
     accessKey: KEY,
     name: "test session", // name of the test
     build: platform + browserName + version, // name of the build
-    "smartUI.project": "NBC-Storybook-222222",
-    "smartUI.build": "[123]",
+    "smartUI.project": "DOT-3237",
+    "smartUI.build": "[PR: 6208]",
     github: {
       url: process.env.GITHUB_URL,
     },
