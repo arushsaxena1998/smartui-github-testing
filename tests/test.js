@@ -85,7 +85,7 @@ async function startTest(gridUrl, capabilities, name) {
       // For Smartui TakeScreenshot
       setTimeout(function () {
         console.log("taking screenshot ...")
-        driver.executeScript(`smartui.takeFullPageScreenshot=a`).then(out => {
+        driver.executeScript(`smartui.takeScreenshot=a`).then(out => {
           console.log("RESPONSE :", out)
           return
         });
